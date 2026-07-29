@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import developerImg from "../assets/developer.png";
 
 const roles = [
   'Full Stack Developer',
@@ -225,16 +226,16 @@ export default function Hero() {
           boxShadow: '0 20px 60px rgba(79,142,247,0.2), 0 0 0 1px rgba(168,85,247,0.1)',
         }}>
           <img
-            src="/src/assets/developer.png"
-            alt="Mohamed Ismail"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center top',  /* face கீழே போகாம top show ஆகும் */
-              display: 'block',
-            }}
-          />
+  src={developerImg}
+  alt="Mohamed Ismail"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "center top",
+  }}
+/>
+          
 
           {/* Bottom glass overlay with name */}
           <div style={{
